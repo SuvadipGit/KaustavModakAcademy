@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Property</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngIf="property.id">
+        <img src="{{property.picture}}"/>
+        <ion-card-content>
+            <h2 class="card-title">{{property.title}}</h2>
+            <p>{{property.address}}, {{property.city}} {{property.state}}</p>
+        </ion-card-content>
+        <ion-list>
+
+            <ion-item>
+                <ion-icon item-left name="moon"></ion-icon>
+                <h3>Age</h3>
+                <ion-note item-right>{{property.age}}</ion-note>
+            </ion-item>
+            <ion-item>
+                <ion-icon item-left name="leaf"></ion-icon>
+                <h3>Age</h3>
+                <ion-note item-right>{{property.age}}</ion-note>
+            </ion-item>
+            
+        </ion-list>
+        
+
+    </ion-card>
+</ion-content>
